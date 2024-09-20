@@ -1,0 +1,15 @@
+[project]
+name = "uv-workspaces"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "p1"
+]
+
+[tool.uv.workspace]
+members = ["packages/p1"]
+
+[tool.uv.sources]
+p1 = { workspace = true }
